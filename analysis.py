@@ -1,4 +1,5 @@
 import xlrd
+import conf
 
 
 class Punch(object):
@@ -56,9 +57,8 @@ def read_excel(loc):
 
 
 def main():
-    print("Hello World!")
     # Give the location of the file
-    loc = "小伙伴考勤原始数据.xlsx"
+    loc = conf.fileloc
     read_excel(loc)
 
 
