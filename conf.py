@@ -7,8 +7,10 @@ SECTION_AFTERNOON_START = 'afternoon_start'
 SECTION_AFTERNOON_END = 'afternoon_end'
 SECTION_WHOLE_NIGHT = 'whole_night'
 
+# 对打卡正式限制的微调，因为打卡机时间不准
 SLIGHT_ADJUST_START_MINUTE = -5
 
+# 工作打卡区间配置，时分秒
 TIME_SECTION_CONFIG = {
     SECTION_MORNING_START: ((7, 0, 0), (9, 30, 0)),
     SECTION_MORNING_END: ((11, 30, 0), (12, 00, 0)),
