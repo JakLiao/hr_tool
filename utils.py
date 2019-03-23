@@ -9,6 +9,10 @@ def datetime_to_datestr(st):
     return st.strftime("%Y-%m-%d")
 
 
+def datetime_to_string(st):
+    return st.strftime("%Y-%m-%d %H:%M:%S")
+
+
 def transfer2time(it):
     return datetime.time().replace(hour=it[0], minute=it[1], second=it[2], microsecond=0)
 
@@ -34,3 +38,10 @@ def date2weekday(dtstr):
     星期一是0，星期天是6
     """
     return string_to_datetime(dtstr + ' 00:00:00').weekday()
+
+
+def show_timelist(timelist):
+    ostr = []
+    for t in timelist:
+        ostr.append(datetime_to_string(t))
+    return ','.join(ostr)
