@@ -61,7 +61,8 @@ def stat_monthly_work(work_data):
             total_duration = totalduration_result[name][month]
             tp = days_hours_minutes(total_duration)
             duration_human = "{:.2f}".format(tp[0] * 24 + tp[1] + tp[2] / 60)
-            print("{:^6}\t在{}月工作{}天，共计{}小时".format(name, month, cnt, duration_human))
+            print("{:^6}\t在{}月工作{}天，共计{}小时, 日平均{:.2f}小时".format(
+                name, month, cnt, duration_human, float(duration_human)/cnt))
 
 
 def stat_work(data):
