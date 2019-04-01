@@ -1,4 +1,6 @@
-FILELOC = "小伙伴考勤原始数据.xlsx"
+FILELOC = "files/3月.xlsx"
+NAME_COL = 3  # 姓名列
+TIME_COL = 6  # 日期列
 
 SECTION_UNKNOWKN = 'unknown'
 SECTION_MORNING_START = 'morning_start'

@@ -125,7 +125,6 @@ def read_excel(loc):
     """Read excel data into Punch items"""
     # To open Workbook
     wb = xlrd.open_workbook(loc)
-    NAME_COL, TIME_COL = 0, 3
 
     records = []
     for sheet in wb.sheets():
